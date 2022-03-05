@@ -1,0 +1,13 @@
+lockfileVersion: 5.3
+
+specifiers:
+  css-class-generator: ^2.0.0
+
+dependencies:
+  css-class-generator: 2.0.0
+
+packages:
+
+  /css-class-generator/2.0.0:
+    resolution: {integrity: sha512-zlmG8hCTmtc+3Esj1R5PgXCKDqJT1Uqhm8NyALvg3kSjAK0+tByFTkMhEh101V+f7toETM4RGigBU4BjGvphLg==}
+    dev: false
