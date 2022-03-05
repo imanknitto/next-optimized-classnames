@@ -1,8 +1,9 @@
 import { join, relative } from "path";
 import generateName from "css-class-generator";
+import _each from "lodash.foreach";
 import { NextConfig } from "next";
 import { WebpackConfigContext } from "next/dist/server/config-shared";
-import { Configuration } from "webpack";
+import { Configuration, RuleSetRule } from "webpack";
 
 const CSS_LOADER_MATCH = join("loaders", "css-loader", "src", "index.js");
 
@@ -24,20 +25,23 @@ function getLocalIdent(path, _, name) {
 }
 
 function webpack(config: Configuration, { dev }: WebpackConfigContext) {
-  if (dev) return config;
-
-  for (const { oneOf } of config.module.rules as any) {
-    if (Array.isArray(oneOf)) {
-      for (const { sideEffects, use } of oneOf) {
-        if (sideEffects === false && Array.isArray(use)) {
-          for (const { loader, options } of use) {
-            if (loader.endsWith(CSS_LOADER_MATCH) && typeof options.modules === "object") {
-              options.modules.getLocalIdent = getLocalIdent;
-            }
+  if (!dev) {
+    _each(config.module.rules, ({ oneOf }: RuleSetRule) => {
+      if (Array.isArray(oneOf)) {
+        _each(oneOf, ({ sideEffects, use }) => {
+          if (sideEffects === false && Array.isArray(use)) {
+            _each(use, ({ loader, options }: any) => {
+              if (
+                String(loader).endsWith(CSS_LOADER_MATCH) &&
+                typeof options.modules === "object"
+              ) {
+                options.modules.getLocalIdent = getLocalIdent;
+              }
+            });
           }
-        }
+        });
       }
-    }
+    });
   }
 
   return config;

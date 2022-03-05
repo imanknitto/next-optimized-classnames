@@ -40,9 +40,11 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "css-class-generator": "^2.0.0"
+    "css-class-generator": "^2.0.0",
+    "lodash.foreach": "^4.5.0"
   },
   "devDependencies": {
+    "@types/lodash.foreach": "^4.5.6",
     "@types/node": "^17.0.21",
     "@types/webpack": "^5.28.0",
     "esbuild": "^0.14.25",
