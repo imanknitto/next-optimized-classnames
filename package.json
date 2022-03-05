@@ -2,8 +2,18 @@
   "name": "next-optimized-classnames",
   "description": "Reduce all CSS classes produced by CSS modules to the smallest form possible",
   "version": "1.0.2",
-  "main": "src/index.js",
-  "types": "types/index.d.ts",
+  "author": {
+    "name": "Nurliman Diara",
+    "email": "iman.knitto@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:knittotextile/next-optimized-classnames.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/knittotextile"
+  },
   "keywords": [
     "next",
     "nextjs",
@@ -16,27 +26,29 @@
     "scss",
     "sass"
   ],
-  "homepage": "https://github.com/kenmueller/next-optimized-classnames#readme",
-  "bugs": {
-    "url": "https://github.com/kenmueller/next-optimized-classnames/issues",
-    "email": "kenmueller0@gmail.com"
+  "files": [
+    "dist",
+    "types"
+  ],
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run build:common",
+    "build:common": "node scripts/build.js",
+    "prepublish": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kenmueller/next-optimized-classnames.git"
-  },
-  "author": {
-    "name": "Ken Mueller",
-    "email": "kenmueller0@gmail.com",
-    "url": "https://github.com/kenmueller"
-  },
-  "license": "MIT",
   "dependencies": {
     "css-class-generator": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
     "@types/webpack": "^5.28.0",
+    "esbuild": "^0.14.25",
+    "esbuild-node-externals": "^1.4.1",
+    "next": "^12.1.0",
+    "rimraf": "^3.0.2",
     "typescript": "^4.6.2"
   }
 }
