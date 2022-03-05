@@ -1,6 +1,5 @@
-/**
- * @param nextConfig Your custom Next.js configuration.
- */
-declare function optimize(nextConfig?: any): any
+import { NextConfig } from "next";
 
-export = optimize
+declare function optimizeClassnames(nextConfig?: NextConfig): NextConfig;
+
+export = optimizeClassnames;
