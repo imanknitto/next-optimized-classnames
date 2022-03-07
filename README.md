@@ -9,7 +9,7 @@ Works with SASS/SCSS/CSS modules
 ## Install
 
 ```bash
-npm i next-optimized-classnames
+npm i @nurliman/next-optimized-classnames
 ```
 
 ## Use
@@ -19,7 +19,7 @@ npm i next-optimized-classnames
 ```js
 // next.config.js
 
-module.exports = require('next-optimized-classnames')()
+module.exports = require('@nurliman/next-optimized-classnames')()
 ```
 
 ### With custom configuration
@@ -27,7 +27,7 @@ module.exports = require('next-optimized-classnames')()
 ```js
 // next.config.js
 
-module.exports = require('next-optimized-classnames')({
+module.exports = require('@nurliman/next-optimized-classnames')({
 	// Custom config
 })
 ```
@@ -39,7 +39,7 @@ module.exports = require('next-optimized-classnames')({
 
 module.exports = require('next-compose-plugins')(
 	[
-		[require('next-optimized-classnames')]
+		[require('@nurliman/next-optimized-classnames')]
 		// Other plugins
 	],
 	{
@@ -50,7 +50,7 @@ module.exports = require('next-compose-plugins')(
 
 ## Example
 
-### Without `next-optimized-classnames`
+### Without `@nurliman/next-optimized-classnames`
 
 ```html
 <div class="Home_container_x83bc">
@@ -59,7 +59,7 @@ module.exports = require('next-compose-plugins')(
 </div>
 ```
 
-### With `next-optimized-classnames`
+### With `@nurliman/next-optimized-classnames`
 
 ```html
 <div class="a">

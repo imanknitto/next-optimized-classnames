@@ -1,7 +1,7 @@
 {
   "name": "@nurliman/next-optimized-classnames",
   "description": "Reduce all CSS classes produced by CSS modules to the smallest form possible",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
     "name": "Nurliman Diara",
     "email": "nurlimandiara@gmail.com"
