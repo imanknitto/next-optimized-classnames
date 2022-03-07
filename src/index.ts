@@ -20,8 +20,8 @@ function getKey({ rootContext, resourcePath }, name: string) {
   return `${relative(rootContext, resourcePath).replace(/\\+/g, "/")}#${name}`;
 }
 
-function getLocalIdent(path, _, name) {
-  return getName(getKey(path, name));
+function getLocalIdent(context: any, _: any, exportName: string) {
+  return getName(getKey(context, exportName));
 }
 
 function webpack(config: Configuration, { dev }: WebpackConfigContext) {
