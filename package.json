@@ -1,18 +1,15 @@
 {
-  "name": "next-optimized-classnames",
+  "name": "@nurliman/next-optimized-classnames",
   "description": "Reduce all CSS classes produced by CSS modules to the smallest form possible",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "Nurliman Diara",
-    "email": "iman.knitto@gmail.com"
+    "email": "nurlimandiara@gmail.com"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:knittotextile/next-optimized-classnames.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/knittotextile"
+    "url": "git@github.com:nurliman/next-optimized-classnames.git"
   },
   "keywords": [
     "next",
