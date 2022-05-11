@@ -8,7 +8,7 @@ specifiers:
   esbuild: ^0.14.25
   esbuild-node-externals: ^1.4.1
   lodash.foreach: ^4.5.0
-  next: ^12.1.0
+  next: ^12.1.6
   rimraf: ^3.0.2
   typescript: ^4.6.2
 
