@@ -44,7 +44,7 @@
     "@types/lodash.foreach": "^4.5.7",
     "@types/node": "^17.0.21",
     "@types/webpack": "^5.28.0",
-    "esbuild": "^0.14.42",
+    "esbuild": "^0.14.47",
     "esbuild-node-externals": "^1.4.1",
     "next": "^12.1.0",
     "rimraf": "^3.0.2",
