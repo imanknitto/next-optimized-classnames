@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/lodash.foreach': ^4.5.7
-  '@types/node': ^17.0.21
+  '@types/node': ^18.17.18
   '@types/webpack': ^5.28.0
   css-class-generator: ^2.0.0
   esbuild: ^0.14.49
@@ -18,7 +18,7 @@ dependencies:
 
 devDependencies:
   '@types/lodash.foreach': 4.5.7
-  '@types/node': 17.0.32
+  '@types/node': 18.17.18
   '@types/webpack': 5.28.0_esbuild@0.14.49
   esbuild: 0.14.49
   esbuild-node-externals: 1.4.1_esbuild@0.14.49
@@ -172,14 +172,14 @@ packages:
     resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
     dev: true
 
-  /@types/node/17.0.32:
-    resolution: {integrity: sha512-eAIcfAvhf/BkHcf4pkLJ7ECpBAhh9kcxRBpip9cTiO+hf+aJrsxYxBeS6OXvOd9WqNAJmavXVpZvY1rBjNsXmw==}
+  /@types/node/18.17.18:
+    resolution: {integrity: sha512-/4QOuy3ZpV7Ya1GTRz5CYSz3DgkKpyUptXuQ5PPce7uuyJAOR7r9FhkmxJfvcNUXyklbC63a+YvB3jxy7s9ngw==}
     dev: true
 
   /@types/webpack/5.28.0_esbuild@0.14.49:
     resolution: {integrity: sha512-8cP0CzcxUiFuA9xGJkfeVpqmWTk9nx6CWwamRGCj95ph1SmlRRk9KlCZ6avhCbZd4L68LvYT6l1kpdEnQXrF8w==}
     dependencies:
-      '@types/node': 17.0.32
+      '@types/node': 18.17.18
       tapable: 2.2.1
       webpack: 5.72.1_esbuild@0.14.49
     transitivePeerDependencies:
@@ -710,7 +710,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 17.0.32
+      '@types/node': 18.17.18
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
